@@ -112,9 +112,14 @@ video{
 .scrolling h4{
     font-size: 140px;
     font-weight: 900;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(0, 255, 0, 0.592);
+    color: black;
+    /* -webkit-text-stroke: 2px rgba(0, 255, 0, 0.592); */
+    /* border: 1px solid lime; */
+    /* filter: drop-shadow(0 0 lime); */
+    /* -webkit-text-stroke: 2px limegreen; */
+    /* text-stroke: 1px limegreen; */
     margin-right: 20px;
+    text-shadow: 1px 1px lime, -1px -1px lime;
     /* z-index: 2; */
 }
 h4:hover{
