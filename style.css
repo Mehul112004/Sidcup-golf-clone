@@ -51,18 +51,24 @@ body{
     transition: 0.5s ease-out;
     z-index: 1;
 }
-video{
-    width: 100%;height: 100%;
-    object-fit: cover;
-    /* object-position: center; */
-    position: fixed;
-    }
+.main-wrapper{
+    /* height: 100vh; */
+    overflow: hidden;
+}
 .main{
     position: relative;
     background-color: rgba(0, 0, 0, 0.353);
-    /* overflow: hidden; */
-    
+    overflow: hidden;
+    /* z-index: 100; */
 }
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: center; */
+    position: fixed;
+    z-index: -2;
+    }
 .page1{
     height: 100vh;
     width: 100%;
@@ -109,18 +115,15 @@ video{
     animation: scroll 10s linear infinite;
     z-index: 2;
 }
+.scrolling-inner-1,.scrolling-inner-2::-webkit-scrollbar{
+    display: none;
+}
 .scrolling h4{
     font-size: 140px;
     font-weight: 900;
     color: black;
-    /* -webkit-text-stroke: 2px rgba(0, 255, 0, 0.592); */
-    /* border: 1px solid lime; */
-    /* filter: drop-shadow(0 0 lime); */
-    /* -webkit-text-stroke: 2px limegreen; */
-    /* text-stroke: 1px limegreen; */
     margin-right: 20px;
     text-shadow: 1px 1px lime, -1px -1px lime;
-    /* z-index: 2; */
 }
 h4:hover{
     color: limegreen;
@@ -132,4 +135,18 @@ h4:hover{
     to{
         transform: translateX(-100%);
     }
+}
+.para{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.para p{
+    width: 65vw;
+    font-size: medium;
+    font-weight:300;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
 }
